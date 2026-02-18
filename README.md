@@ -1,4 +1,4 @@
-# live-switcher-dashboard
+
 # Live Switcher Control Panel (React + TS + WebSockets)
 
 Real-time web UI inspired by production switcher control panels.  
