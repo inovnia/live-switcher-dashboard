@@ -1,29 +1,30 @@
+# Live Switcher Control Panel
 
-# Live Switcher Control Panel (React + TS + WebSockets)
+A real-time control panel simulation built with React, TypeScript, and WebSockets.
 
-Real-time web UI inspired by production switcher control panels.  
-Focus: low-latency updates, typed messages, resilient WebSocket connection.
+This project simulates a broadcast video switcher control interface with live updates and bidirectional communication between client and server.
+
+---
 
 ## Features
-- WebSocket real-time updates (program/preview, tallies, meters)
-- Connection status + auto-reconnect
-- Typed message model (TypeScript interfaces + runtime guards)
-- Event log and replay
-- Performance: throttled meter updates, memoized UI components
+
+- Real-time communication using WebSocket
+- Program / Preview switching
+- Audio meter live updates
+- Two-way communication (client ↔ server)
+- Typed message handling with TypeScript
+- Simple control panel style UI
+
+---
 
 ## Tech Stack
-- React, TypeScript
-- WebSocket (ws)
+
+- React + TypeScript
 - Vite
-- (Optional) Redux Toolkit / Zustand
+- Node.js
+- ws (WebSocket library)
 
-## Architecture (high level)
-- `server/` simulates a switcher sending state updates every X ms
-- `client/` subscribes via WebSocket and renders a control-panel UI
-- Messages follow a typed schema to prevent runtime surprises
+---
 
-## Getting Started
-```bash
-git clone ...
-cd server && npm i && npm run dev
-cd ../client && npm i && npm run dev
+## Project Structure
+
